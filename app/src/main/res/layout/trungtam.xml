@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/vienmenu1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgTrungTam"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thi1"/>
+
+    <TextView
+        android:id="@+id/tvTenTrungTam"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Trường dạy nghề và sát hạch lái xe Hải Dương"
+        android:textSize="18sp"
+        android:maxLines="2"
+
+        android:ellipsize="end"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại"
+        android:textSize="16sp"/>
+</LinearLayout>

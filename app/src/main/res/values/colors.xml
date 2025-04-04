@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color> <!-- Màu xanh dương -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Màu xanh dương đậm -->
+    <color name="colorAccent">#FF4081</color> <!-- Màu hồng -->
+    <color name="primaryColor">#1976D2</color>  <!-- Màu xanh dương đẹp -->
+
+    <color name="xanh_nhat">#BBDEFB</color> <!-- Xanh lam nhạt -->
+    <color name="do_nhat">#FFCDD2</color> <!-- Đỏ nhạt -->
+    <!-- Màu nền CardView -->
+    <color name="cardview_dark_background">#212121</color> <!-- Nền tối cho CardView -->
+    <color name="red">#F44336</color>
+    <!-- Các màu chữ để sử dụng trên nền tối -->
+    <color name="text_light">#FFFFFF</color> <!-- Màu chữ trắng -->
+    <color name="text_yellow">#FFEB3B</color> <!-- Màu chữ vàng sáng -->
+    <color name="text_blue">#2196F3</color> <!-- Màu chữ xanh dương sáng -->
+    <color name="text_grey">#E0E0E0</color> <!-- Màu chữ xám sáng -->
+</resources>

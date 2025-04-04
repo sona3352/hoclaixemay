@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iconmain"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconmain"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Thixemay"
+        tools:replace="android:fullBackupContent"
+        tools:targetApi="31">
+        <activity
+            android:name=".Loadcauhoi"
+            android:exported="false" />
+        <activity
+            android:name=".Dangcau"
+            android:exported="false" />
+        <activity
+            android:name=".Quantri"
+            android:exported="false" />
+        <activity
+            android:name=".Theodoi"
+            android:exported="false" />
+        <activity
+            android:name=".Khoahoc"
+            android:exported="false" />
+        <activity
+            android:name=".Hocbai2"
+            android:exported="false" />
+        <activity
+            android:name=".Hocbai"
+            android:exported="false" />
+        <activity
+            android:name=".Video"
+            android:exported="false" />
+        <activity
+            android:name=".VideoMP"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Cauliet2"
+            android:exported="false" />
+        <activity
+            android:name=".Cauliet"
+            android:exported="false" />
+        <activity
+            android:name=".Ketthuc"
+            android:exported="false" />
+        <activity
+            android:name=".Thithu2"
+            android:exported="false" />
+        <activity
+            android:name=".Thithu"
+            android:exported="false" />
+        <activity
+            android:name=".Loaibienbao"
+            android:exported="false" />
+        <activity
+            android:name=".Bienbao"
+            android:exported="false" />
+        <activity
+            android:name=".thongtincanhan"
+            android:exported="false" />
+        <activity
+            android:name=".Meothi"
+            android:exported="false" />
+        <activity
+            android:name=".Dangky"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Xahoi"
+            android:exported="false" />
+        <activity
+            android:name=".Lythuyet"
+            android:exported="false" />
+        <activity
+            android:name=".Binhluan"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Dangnhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

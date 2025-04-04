@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Ảnh đại diện -->
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ava1"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Nội dung bình luận -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Tên người dùng -->
+        <TextView
+            android:id="@+id/tenUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên người dùng"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Nội dung bình luận -->
+        <TextView
+            android:id="@+id/noiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội dung bình luận"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:maxLines="3"
+            android:ellipsize="end" />
+
+        <!-- Thời gian bình luận -->
+        <TextView
+            android:id="@+id/thoiGian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 phút trước"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+</LinearLayout>

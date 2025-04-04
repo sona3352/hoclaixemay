@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvTenKhoaHoc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên khóa học"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tvGioiThieu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới thiệu"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tvGiaBan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá bán"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:id="@+id/tvTrangthai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chờ duyệt"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/tvXoaKhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xoá khóa học"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624034981182",
+    "project_id": "dataxemay",
+    "storage_bucket": "dataxemay.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624034981182:android:e646ba8cbb67465790b86f",
+        "android_client_info": {
+          "package_name": "com.example.thixemay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI4jBP3-mUzlRueltrKXZIHaEfkL0oKMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

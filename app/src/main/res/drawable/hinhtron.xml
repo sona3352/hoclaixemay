@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">  <!-- Đổi từ oval sang rectangle -->
+
+    <!-- Màu nền của button -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Độ dày và màu của viền -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- Viền màu đen -->
+
+    <!-- Kích thước của button -->
+    <size
+        android:width="60dp"
+        android:height="60dp" />
+</shape>

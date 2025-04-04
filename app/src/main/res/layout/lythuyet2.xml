@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vienanh"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/bainoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Bài Nói"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/mota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:padding="8dp"
+        android:text="Mô tả chi tiết về bài nói, nội dung giúp người học cải thiện kỹ năng giao tiếp."
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+</LinearLayout>

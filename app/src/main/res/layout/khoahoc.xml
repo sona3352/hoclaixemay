@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tên khóa học -->
+        <TextView
+            android:id="@+id/tvTenKhoaHoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bằng A1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <!-- Giới thiệu -->
+        <TextView
+            android:id="@+id/tvGioithieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khóa học Bằng A1 dành cho những người muốn học lái xe mô tô dưới 175cc. Khóa học này bao gồm các bài học lý thuyết về luật giao thông và thực hành lái xe mô tô trong môi trường an toàn."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Layout chứa giá và nút đăng ký -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <!-- Giá tiền bên trái -->
+            <TextView
+                android:id="@+id/tvGiaBan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Giá: 10.000.000 VNĐ"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <!-- Nút Đăng ký bên phải -->
+            <Button
+                android:id="@+id/btnDangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

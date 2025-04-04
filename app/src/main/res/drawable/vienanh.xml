@@ -1,0 +1,19 @@
+<!-- res/drawable/shadow.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lớp bóng đổ -->
+    <item android:right="8dp" android:left="8dp" android:top="8dp" android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <!-- Màu bóng đổ đậm hơn -->
+            <solid android:color="#99000000" /> <!-- Màu đen đậm hơn -->
+            <corners android:radius="10dp" /> <!-- Góc bo tròn -->
+        </shape>
+    </item>
+
+    <!-- Lớp hình ảnh (hoặc nền) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Nền trắng -->
+            <corners android:radius="10dp" /> <!-- Góc bo tròn -->
+        </shape>
+    </item>
+</layer-list>

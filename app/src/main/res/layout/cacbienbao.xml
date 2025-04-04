@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vienanh"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- ImageView bên trái -->
+    <ImageView
+        android:id="@+id/bienbao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ava1"
+        android:scaleType="centerCrop" />
+
+    <!-- LinearLayout chứa 2 TextView bên phải -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tieudebienbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Tiêu đề"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mota4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Thông tin rất dài có thể mở rộng mà không bị cắt, giúp đảm bảo người dùng luôn đọc được toàn bộ nội dung."
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:ellipsize="none"/>
+    </LinearLayout>
+
+</LinearLayout>
