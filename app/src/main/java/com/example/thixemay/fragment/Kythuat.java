@@ -75,6 +75,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 "Để giảm tốc độ khi ô tô đi xuống đường dốc dài, cần về số thấp phù hợp, nhả bàn đạp ga và kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ, đảm bảo an toàn."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -85,6 +86,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 " Khi điều khiển xe giảm số, người lái xe không được nhìn xuống buồng lái để đảm bảo an toàn. Cần phải giảm thứ tự từ cao đến thấp, phối hợp các động tác nhịp nhàng và chính xác, vù ga phải phù hợp với tốc độ."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -95,6 +97,7 @@ public class Kythuat extends Fragment {
                 "",
                 "A",
                 "Khi điều khiển xe tăng số, người lái xe không được nhìn xuống buồng lái để đảm bảo an toàn. Cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác nhịp nhàng và chính xác."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -105,6 +108,7 @@ public class Kythuat extends Fragment {
                 "Cả ý 1 và ý 3.",
                 "D",
                 "Khi điều khiển xe ô tô tự đổ, người lái xe cần chú ý khi chạy trên đường xấu, nhiều ổ gà nên chạy chậm để thùng xe không bị lắc mạnh và không gây hiện tượng lệch 'ben'. Khi chạy vào đường vòng, cần giảm tốc độ, không lấy lái gấp và không phanh gấp. Khi đổ hàng, phải chọn vị trí có nền đường cứng và phẳng, dừng hẳn xe, kéo chặt phanh tay, sau đó mới điều khiển cơ cấu nâng 'ben' để đổ hàng, đổ xong hàng mới hạ thùng xuống. Do đó, cả ý 1 và ý 3 đều đúng, trong khi ý 2 là sai vì khi đang chạy, phải hạ hết thùng xe xuống."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -115,6 +119,7 @@ public class Kythuat extends Fragment {
                 "",
                 "C",
                 "Khi điều khiển xe qua đường sắt, nếu có chuông báo hoặc thanh chắn đã hạ xuống, người lái xe phải dừng xe tạm thời ở khoảng cách an toàn và kéo phanh tay nếu đường dốc hoặc phải chờ lâu. Nếu không có chuông báo hoặc thanh chắn không hạ xuống, người lái xe cần quan sát và nếu thấy đủ điều kiện an toàn thì về số thấp, tăng ga nhẹ và không thay đổi số trong quá trình vượt qua đường sắt để tránh động cơ chết máy."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -125,6 +130,7 @@ public class Kythuat extends Fragment {
                 "",
                 "C",
                 "Khi điều khiển xe sử dụng hộp số cơ khí vượt qua rãnh lớn cắt ngang mặt đường, cần gài số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô tô lên khỏi rãnh. Không tăng số cho đến khi xe đã vượt qua khỏi rãnh hoàn toàn."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -135,6 +141,7 @@ public class Kythuat extends Fragment {
                 "",
                 "A",
                 "Khi điều khiển xe ô tô rẽ trái ở chỗ đường giao nhau, cần cách chỗ rẽ một khoảng cách an toàn, giảm tốc độ, có tín hiệu rẽ trái, xin đổi làn đường, quan sát an toàn xung quanh đặc biệt là bên trái, đổi sang làn đường bên trái, cho xe chạy chậm tới phía trong của tâm đường giao nhau mới rẽ trái để điều khiển xe qua chỗ đường giao nhau."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -145,6 +152,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 "Khi điều khiển xe ô tô rẽ phải ở chỗ đường giao nhau, cần cách chỗ rẽ một khoảng cách an toàn, có tín hiệu rẽ phải, quan sát an toàn phía sau, điều khiển xe bám sát vào phía phải đường, giảm tốc độ và quan sát an toàn phía bên phải để điều khiển xe qua chỗ đường giao nhau."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -155,6 +163,7 @@ public class Kythuat extends Fragment {
                 "",
                 "A",
                 "Khi điều khiển xe trên đường vòng, người lái xe cần quan sát cẩn thận các chướng ngại vật, báo hiệu bằng còi hoặc đèn, giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của đường vòng để đảm bảo an toàn."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -165,6 +174,7 @@ public class Kythuat extends Fragment {
                 "",
                 "A",
                 "Khi xuống dốc muốn dừng xe, cần có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn so với lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại. Sau đó về số 1, đạp nửa ly hợp (côn) cho xe đến chỗ dừng; khi xe đã dừng, về số không (N), đạp phanh chân và kéo phanh tay."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -175,6 +185,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 "Khi điều khiển ô tô xuống dốc cao, người lái xe cần về số thấp, nhả bàn đạp ga ở mức độ phù hợp và kết hợp với phanh chân để khống chế tốc độ, đảm bảo an toàn."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -185,6 +196,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 " Khi điều khiển ô tô lên dốc cao, người lái xe cần về số thấp từ chân dốc, điều chỉnh ga để xe từ từ lên dốc. Đến gần đỉnh dốc, cần đi chậm, đi sát về phía bên phải đường và sử dụng tín hiệu (còi, đèn) để báo cho người lái xe đi ngược chiều biết."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -195,6 +207,7 @@ public class Kythuat extends Fragment {
                 "Cả ý 1 và ý 2.",
                 "D",
                 "Khi tránh nhau trên đường hẹp, người lái xe cần chú ý không đi cố vào đường hẹp, xe đi ở phía sườn núi nên dừng lại trước để nhường đường và phải đỗ ngay ngắn khi dừng xe nhường đường. Trong khi tránh nhau, không nên đổi số và khi tránh nhau ban đêm, phải tắt đèn pha và bật đèn cốt. Cả ý 1 và ý 2 đều đúng, trong khi ý 3 là sai vì bật đèn pha khi tránh nhau ban đêm không đảm bảo an toàn."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -205,6 +218,7 @@ public class Kythuat extends Fragment {
                 "",
                 "A",
                 "Khi quay đầu xe, người lái xe cần quan sát biển báo hiệu để biết nơi được phép quay đầu, quan sát kỹ địa hình nơi chọn để quay đầu, lựa chọn quỹ đạo quay đầu xe cho thích hợp, quay đầu xe với tốc độ thấp, và thường xuyên báo tín hiệu để người, các phương tiện xung quanh biết. Nếu quay đầu xe ở nơi nguy hiểm, cần đưa đầu xe về phía nguy hiểm và đuôi xe về phía an toàn."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -215,6 +229,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 "Khi khởi hành ô tô sử dụng hộp số cơ khí trên đường bằng, cần kiểm tra an toàn xung quanh xe, đạp ly hợp (côn) hết hành trình, vào số 1, nhả hết phanh tay, báo hiệu bằng còi hoặc đèn trước khi xuất phát, tăng ga đủ để xuất phát, và nhả từ từ bàn đạp ly hợp đến 1/2 hành trình, giữ trong khoảng 3 giây, sau đó vừa tăng ga vừa nhả hết ly hợp để cho xe ô tô chuyển động."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -225,6 +240,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 "Khi nhả hệ thống phanh dừng cơ khí điều khiển bằng tay (phanh tay), cần dùng lực tay phải bóp khóa hãm và đẩy cần phanh tay về phía trước hết hành trình. Nếu khóa hãm bị kẹt cứng, phải kéo cần phanh tay về phía sau đồng thời bóp khóa hãm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -235,6 +251,7 @@ public class Kythuat extends Fragment {
                 "",
                 "B",
                 "Khi khởi hành xe ô tô số tự động, cần đạp bàn đạp phanh chân hết hành trình, vào số và nhả phanh tay, sau đó kiểm tra lại xem có bị nhầm số không trước khi cho xe lăn bánh để đảm bảo an toàn."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -245,6 +262,7 @@ public class Kythuat extends Fragment {
                 "",
                 "A",
                 "Khi điều khiển xe mô tô tay ga xuống đường dốc dài, độ dốc cao, cần giữ tay ga ở mức độ phù hợp và sử dụng cả phanh trước và phanh sau để giảm tốc độ, đảm bảo an toàn."
+                ,false
         ));
 
         quizViewModel.addcauhoi("fragment2", questionList);

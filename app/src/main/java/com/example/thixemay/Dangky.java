@@ -71,6 +71,7 @@ public class Dangky extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     String userId = auth.getCurrentUser().getUid();
                                     ClassND userData = new ClassND(
+                                            userId,
                                             avatarMacdinh,
                                             taikhoan,
                                             layhoten,

@@ -38,24 +38,24 @@ public class Thithu extends AppCompatActivity {
         mota3 = findViewById(R.id.mota3);
         rv4 = findViewById(R.id.rv4);
 
-        // Nhận dữ liệu từ Intent
+
         Intent intent = getIntent();
         int imageResId = intent.getIntExtra("image", 0);
         String title = intent.getStringExtra("title");
         String mota = intent.getStringExtra("mota");
 
-        // Gán dữ liệu lên giao diện
+
         mota3.setText(mota);
         iv3.setImageResource(imageResId);
         tieude.setText(title);
 
-        // Khởi tạo danh sách và Adapter
+
         list1 = new ArrayList<>();
         dt = new AdapterDT(this, list1);
         rv4.setLayoutManager(new LinearLayoutManager(this));
         rv4.setAdapter(dt);
 
-        // Tải danh sách đề thi từ Firebase
+
         loadDeThiFromFirebase();
     }
 
@@ -65,12 +65,12 @@ public class Thithu extends AppCompatActivity {
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                list1.clear(); // Xóa dữ liệu cũ trước khi thêm mới
+                list1.clear();
                 for (DataSnapshot deThiSnapshot : snapshot.getChildren()) {
                     String tenDe = deThiSnapshot.getKey();
-                    list1.add(new ClassLT(0, tenDe.toUpperCase(), ""));
+                    list1.add(new ClassLT(0, tenDe, ""));
                 }
-                dt.notifyDataSetChanged(); // Cập nhật RecyclerView
+                dt.notifyDataSetChanged();
             }
 
             @Override

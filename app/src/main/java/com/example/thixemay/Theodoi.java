@@ -45,34 +45,34 @@ public class Theodoi extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-// Khởi tạo mảng khóa học
+
         list = new ArrayList<>();
         adapter = new AdapterTheodoi(this, list);
         recyclerView.setAdapter(adapter);
 
-// Lấy dữ liệu từ Firebase theo id người dùng
+
         database = FirebaseDatabase.getInstance().getReference("DangKyKhoaHoc");
 
-// Lấy UID của người dùng hiện tại
-        String userId = currentUser.getUid();  // Lấy UID của người dùng hiện tại
 
-// Truy vấn khóa học đã đăng ký của người dùng (dùng UID của người dùng)
-        DatabaseReference userKhoaHocRef = database.child(userId); // Dùng userId làm key cho node người dùng
+        String userId = currentUser.getUid();
+
+
+        DatabaseReference userKhoaHocRef = database.child(userId);
 
         userKhoaHocRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                list.clear(); // Xóa dữ liệu cũ trước khi thêm dữ liệu mới
+                list.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    String idKhoaHoc = snapshot.getKey(); // Lấy ID khóa học từ Firebase
+                    String idKhoaHoc = snapshot.getKey();
 
-                    ClassKhoahoc khoahoc = snapshot.getValue(ClassKhoahoc.class); // Chuyển dữ liệu thành đối tượng ClassKhoahoc
+                    ClassKhoahoc khoahoc = snapshot.getValue(ClassKhoahoc.class);
                     if (khoahoc != null) {
-                        khoahoc.setId(idKhoaHoc); // Gán ID khóa học vào đối tượng
-                        list.add(khoahoc); // Thêm khóa học vào danh sách
+                        khoahoc.setId(idKhoaHoc);
+                        list.add(khoahoc);
                     }
                 }
-                adapter.notifyDataSetChanged(); // Cập nhật adapter để hiển thị dữ liệu
+                adapter.notifyDataSetChanged();
             }
 
 

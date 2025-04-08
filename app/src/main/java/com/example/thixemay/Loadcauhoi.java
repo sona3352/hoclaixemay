@@ -1,6 +1,7 @@
 package com.example.thixemay;
 
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -35,7 +36,7 @@ import java.util.Map;
 public class Loadcauhoi extends AppCompatActivity {
     EditText txtCauhoi, txtHinhanh, txtA, txtB, txtC, txtD, txtDapAnDung;
     String tendang, tenCau;
-    Button btnLuu, btnMoanh;
+    Button btnLuu, btnMoanh, btnXoa;
     List<DataSnapshot> danhSachCauHoi = new ArrayList<>();
 
     private Cloudinary cloudinary;
@@ -59,6 +60,7 @@ public class Loadcauhoi extends AppCompatActivity {
         txtDapAnDung = findViewById(R.id.txtDapAnDung);
         btnLuu = findViewById(R.id.btnLuu);
         btnMoanh = findViewById(R.id.btnMoanh);
+        btnXoa = findViewById(R.id.btnXoa);
 
         // Cấu hình Cloudinary
         Map<String, String> config = new HashMap<>();
@@ -83,6 +85,7 @@ public class Loadcauhoi extends AppCompatActivity {
         loadCauHoi();
         btnLuu.setOnClickListener(v -> luuCauHoi());
         btnMoanh.setOnClickListener(v -> moThuVien());
+        btnXoa.setOnClickListener(v -> xoacauhoi());
     }
     private void moThuVien() {
         ImagePicker.with(this)
@@ -121,6 +124,31 @@ public class Loadcauhoi extends AppCompatActivity {
             }
         }).start();
     }
+    private void xoacauhoi() {
+        // Tạo hộp thoại xác nhận
+        new AlertDialog.Builder(this)
+                .setTitle("Xóa câu hỏi")
+                .setMessage("Bạn có chắc chắn muốn xóa câu hỏi này?")
+                .setPositiveButton("OK", (dialog, which) -> {
+
+                    // Xóa câu hỏi khỏi Firebase Database
+                    DatabaseReference ref = FirebaseDatabase.getInstance()
+                            .getReference("dethi").child(tendang).child(tenCau);
+                    ref.removeValue()
+                            .addOnSuccessListener(aVoid -> {
+                                Toast.makeText(Loadcauhoi.this, "Câu hỏi đã bị xóa!", Toast.LENGTH_SHORT).show();
+                                finish(); // Quay lại màn hình trước đó sau khi xóa thành công
+                            })
+                            .addOnFailureListener(e -> {
+                                Toast.makeText(Loadcauhoi.this, "Xóa câu hỏi thất bại!", Toast.LENGTH_SHORT).show();
+                            });
+                })
+                .setNegativeButton("Hủy", (dialog, which) -> dialog.dismiss()) // Nếu nhấn "Hủy", sẽ đóng hộp thoại mà không làm gì cả
+                .create()
+                .show();
+    }
+
+
     private void loadCauHoi() {
         DatabaseReference ref = FirebaseDatabase.getInstance()
                 .getReference("dethi").child(tendang).child(tenCau);

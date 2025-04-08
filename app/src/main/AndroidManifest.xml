@@ -18,6 +18,9 @@
         tools:replace="android:fullBackupContent"
         tools:targetApi="31">
         <activity
+            android:name=".Chitietnguoidung"
+            android:exported="false" />
+        <activity
             android:name=".Loadcauhoi"
             android:exported="false" />
         <activity
@@ -87,7 +90,8 @@
         <activity
             android:name=".Binhluan"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustPan"/>
+
         <activity
             android:name=".Dangnhap"
             android:exported="true">

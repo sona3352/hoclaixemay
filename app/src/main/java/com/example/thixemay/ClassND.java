@@ -1,6 +1,7 @@
 package com.example.thixemay;
 
 public class ClassND {
+    private String userId;
     private String avatar;
     private String email;
     private String hoten;
@@ -9,12 +10,21 @@ public class ClassND {
     public ClassND() {
     }
 
-    public ClassND(String avatar, String email, String hoten, String diachi, String role) {
+    public ClassND(String userId, String avatar, String email, String hoten, String diachi, String role) {
+        this.userId = userId;
         this.avatar = avatar;
         this.email = email;
         this.hoten = hoten;
         this.diachi = diachi;
         this.role = role;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getAvatar() {

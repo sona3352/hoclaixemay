@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,7 +28,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -50,15 +53,14 @@ public class Thithu2 extends AppCompatActivity {
         hoanthanh = findViewById(R.id.hoanthanh);
         viewPager2 = findViewById(R.id.ViewPaper2);
         quizViewModel = new ViewModelProvider(this).get(QuizViewModel.class);
-        sliderPagerAdapter = new SliderAdapter1(this);
         batDauDemNguoc(1140000);
         viewPager2.setAdapter(sliderPagerAdapter);
 
         String dethiKey = getIntent().getStringExtra("dethi_key");
-        Luyenthi fragment = new Luyenthi();
-        Bundle args = new Bundle();
-        args.putString("DETHI_KEY", dethiKey);
-        fragment.setArguments(args);
+
+        // Khởi tạo SliderAdapter1 với dethi_key
+        sliderPagerAdapter = new SliderAdapter1(this, dethiKey);
+        viewPager2.setAdapter(sliderPagerAdapter);
 
         viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
@@ -76,11 +78,13 @@ public class Thithu2 extends AppCompatActivity {
         });
     }
     private void ketThucLuyenThi() {
+        // Kiểm tra số câu đúng
         int socaudung = quizViewModel.getSocaudung();
         int tongcauhoi = sliderPagerAdapter.getItemCount();
         float diemTren100 = (socaudung * 100f) / tongcauhoi;
         float tongdiem = (diemTren100 * 10) / 100f;
         tongdiem = Math.round(tongdiem * 100) / 100f;
+
         // Lấy user ID từ Firebase Authentication
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
@@ -96,11 +100,12 @@ public class Thithu2 extends AppCompatActivity {
             // Lưu dữ liệu lên Firebase
             userRef.setValue(ketQua).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
-                    // Khi lưu thành công, chuyển sang màn hình Ketthuc
+                    List<Cauhoi> diemlietSai = quizViewModel.getDiemlietCauHoiSai();
                     Intent intent = new Intent(Thithu2.this, Ketthuc.class);
                     intent.putExtra("CAU_DUNG", socaudung);
                     intent.putExtra("TONG_CAU_HOI", tongcauhoi);
                     intent.putExtra("MO_TA", "Mô Tả Hình Ảnh");
+                    intent.putExtra("DIEM_LIET_SAI", !diemlietSai.isEmpty());
                     startActivity(intent);
                     finish();
                 } else {
@@ -111,6 +116,7 @@ public class Thithu2 extends AppCompatActivity {
             Toast.makeText(Thithu2.this, "Người dùng chưa đăng nhập", Toast.LENGTH_SHORT).show();
         }
     }
+
         private void sendAnswersToFragment(int position) {
             // Tìm fragment hiện tại đang hiển thị trong ViewPager2
             Fragment

@@ -75,6 +75,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 "Người hành nghề lái xe khi thực hiện tốt việc rèn luyện, nâng cao trách nhiệm và đạo đức nghề nghiệp sẽ được khách hàng, xã hội tôn trọng; được đồng nghiệp quý mến và giúp đỡ; được doanh nghiệp tin dùng và đóng góp nhiều cho xã hội. Đồng thời, điều này cũng thu hút khách hàng, góp phần quan trọng trong xây dựng thương hiệu và kinh doanh có hiệu quả cao."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -85,6 +86,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "A",
                 "Người lái xe vận tải hàng hóa phải thực hiện nghiêm chỉnh các nội dung hợp đồng giữa chủ phương tiện với chủ hàng, không chở hàng cấm, không xếp hàng quá trọng tải của xe và quá trọng tải cho phép của cầu, đường. Khi vận chuyển hàng hóa quá khổ, quá tải, hàng nguy hiểm, hàng siêu trường, siêu trọng phải có giấy phép."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -95,6 +97,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "B",
                 "Người lái xe kinh doanh vận tải cần thực hiện cả hai ý để nâng cao đạo đức nghề nghiệp. Họ cần yêu quý, quản lý và sử dụng xe tốt, bảo dưỡng xe đúng định kỳ, thực hành tiết kiệm vật tư và nhiên liệu. Đồng thời, họ phải nắm vững và chấp hành các quy định của pháp luật, lái xe an toàn, coi hành khách như người thân và là đối tác tin cậy, có ý thức tổ chức kỷ luật và tinh thần hợp tác, tương trợ đồng nghiệp."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -105,6 +108,7 @@ public class Vanhoa extends Fragment {
                 "Cả ý 2 và ý 3.",
                 "D",
                 "Người lái xe và nhân viên phục vụ trên ô tô vận tải hành khách phải kiểm tra các điều kiện bảo đảm an toàn của xe trước khi khởi hành, có thái độ văn minh, lịch sự, hướng dẫn hành khách ngồi đúng nơi quy định và kiểm tra việc sắp xếp, chằng buộc hành lý để đảm bảo an toàn. Đồng thời, họ phải có biện pháp bảo vệ tính mạng, sức khỏe, tài sản của hành khách, giữ gìn trật tự và vệ sinh trong xe, và đảm bảo cửa lên xuống của xe được đóng trước và trong khi xe chạy."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -115,6 +119,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 "Khái niệm về văn hóa giao thông bao gồm cả sự hiểu biết và chấp hành nghiêm chỉnh pháp luật về giao thông, ý thức trách nhiệm với cộng đồng khi tham gia giao thông, và ứng xử có văn hóa, có tình yêu thương con người trong các tình huống không may xảy ra khi tham gia giao thông."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -125,6 +130,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "B",
                 " Người lái xe ô tô cần giảm tốc độ và cho xe chạy chậm qua vũng nước để tránh làm bắn nước vào những người đi xe mô tô bên cạnh, thể hiện ý thức và văn hóa giao thông."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -135,6 +141,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "B",
                 "Hành vi cố tình không phân biệt làn đường, vạch phân làn, phóng nhanh, vượt ẩu, vượt đèn đỏ, đi vào đường cấm, đường một chiều được coi là thiếu văn hóa giao thông, thể hiện sự thiếu tôn trọng luật lệ và an toàn giao thông."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -145,6 +152,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "B",
                 " Khi sơ cứu người bị tai nạn giao thông với vết thương chảy máu ngoài, màu đỏ tươi phun thành tia và phun mạnh khi mạch đập, cần thực hiện cầm máu không trực tiếp (chặn động mạch) để ngăn chặn dòng máu lưu thông và giảm nguy cơ mất máu nghiêm trọng."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -155,6 +163,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 "Người lái xe có văn hóa khi tham gia giao thông phải có trách nhiệm với bản thân và cộng đồng, tôn trọng và nhường nhịn người khác. Họ cũng nên tận tình giúp đỡ người gặp hoạn nạn, cũng như hỗ trợ người khuyết tật, trẻ em và người cao tuổi."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -165,6 +174,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "B",
                 "Người lái xe mô tô có văn hóa giao thông phải chấp hành quy định về tốc độ, đèn tín hiệu, biển báo hiệu, và vạch kẻ đường. Họ cũng cần tuân thủ hiệu lệnh và chỉ dẫn của người điều khiển giao thông, cũng như nhường đường cho người đi bộ, người già, trẻ em và người khuyết tật."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -175,6 +185,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "A",
                 "Người lái xe mô tô có văn hóa giao thông phải điều khiển xe đi bên phải theo chiều đi của mình, đi đúng phần đường, làn đường quy định. Họ cũng phải đội mũ bảo hiểm đạt chuẩn và cài quai đúng quy cách mọi lúc khi tham gia giao thông, không chỉ ở nơi có biển báo bắt buộc."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -185,6 +196,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "A",
                 "Người lái xe ô tô, mô tô có văn hóa giao thông phải đi bên phải theo chiều đi của mình, đi đúng phần đường, làn đường quy định, và dừng, đỗ xe đúng nơi quy định. Quan trọng nhất, nếu đã uống rượu, bia thì không được lái xe. "
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -195,6 +207,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 "Người có văn hóa giao thông khi điều khiển xe cơ giới tham gia giao thông đường bộ phải có giấy phép lái xe phù hợp với loại xe được phép điều khiển, xe cơ giới phải đảm bảo các quy định về chất lượng, an toàn kỹ thuật và bảo vệ môi trường. Đồng thời, họ phải có giấy chứng nhận bảo hiểm trách nhiệm dân sự còn hiệu lực và nộp phí sử dụng đường bộ theo quy định."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -205,6 +218,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "A",
                 "Khi xảy ra tai nạn giao thông, người lái xe và người có mặt tại hiện trường phải đặt các biển cảnh báo hoặc vật báo hiệu ở phía trước và phía sau hiện trường để cảnh báo, kiểm tra khả năng xảy ra hỏa hoạn do nhiên liệu bị rò rỉ, bảo vệ hiện trường và cấp cứu người bị thương."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -215,6 +229,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "A",
                 "Khi xảy ra tai nạn giao thông có người bị thương nghiêm trọng, người lái xe và người có mặt tại hiện trường phải thực hiện sơ cứu ban đầu trong trường hợp khẩn cấp và thông báo vụ tai nạn đến cơ quan thi hành pháp luật. Không nên rời khỏi hiện trường trừ khi để báo cáo hoặc tìm kiếm sự giúp đỡ."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -225,6 +240,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 "Khi sơ cứu ban đầu cho người bị tai nạn giao thông không còn hô hấp, cần đặt nạn nhân nằm ngửa và khai thông đường thở, sau đó thực hiện các biện pháp hô hấp nhân tạo để giúp nạn nhân thở trở lại."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -235,6 +251,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 " Hành vi bỏ trốn sau khi gây tai nạn để trốn tránh trách nhiệm hoặc khi có điều kiện mà cố ý không cứu giúp người bị tai nạn giao thông là bị nghiêm cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -245,6 +262,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 "Khi xCảy ra tai nạn giao thông, các hành vi xâm phạm tính mạng, sức khỏe, tài sản của người bị tai nạn và người gây tai nạn, cũng như hành vi bỏ trốn sau khi gây tai nạn để trốn tránh trách nhiệm đều bị nghiêm cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -255,6 +273,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "A",
                 "Khi xảy ra tai nạn giao thông, hành vi xâm phạm tính mạng, sức khỏe, tài sản của người bị nạn và người gây tai nạn bị nghiêm cấm. Việc sơ cứu người bị nạn và người gây tai nạn là hành động cần thiết và không cần phải chờ cơ quan có thẩm quyền cho phép."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -265,6 +284,7 @@ public class Vanhoa extends Fragment {
                 "",
                 "C",
                 "Người điều khiển xe mô tô hai bánh có văn hóa giao thông sẽ kiên nhẫn tuân thủ hướng dẫn của người điều khiển giao thông hoặc tín hiệu giao thông, di chuyển trên đúng phần đường bên phải theo chiều đi, và nhường đường cho các phương tiện đi ngược chiều để giúp nút tắc nhanh chóng được giải tỏa."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -275,6 +295,7 @@ public class Vanhoa extends Fragment {
                 "Tất cả các ý nêu trên.",
                 "D",
                 " Những hành vi bấm còi liên tục, đi lên vỉa hè, tận dụng mọi khoảng trống để nhanh chóng thoát khỏi nơi ùn tắc, và lấn sang trái đường cố gắng vượt lên xe khác đều là những hành vi thiếu văn hóa khi tham gia giao thông."
+                ,false
         ));
         quizViewModel.addcauhoi("fragment2", questionList);
         giaithich = questionList;

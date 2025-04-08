@@ -47,7 +47,7 @@ public class AdapterQT extends RecyclerView.Adapter<AdapterQT.MainClassViewHoder
     @Override
     public void onBindViewHolder(@NonNull MainClassViewHoder holder, int position) {
         ClassQT main = list.get(position);
-        holder.ten11.setText(main.getTendang());
+        holder.ten11.setText(main.getTenhienthi());
         Glide.with(aa)
                 .load(main.getAnhnen())
                 .placeholder(com.denzcoskun.imageslider.R.drawable.loading)

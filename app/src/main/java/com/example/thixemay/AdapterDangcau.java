@@ -17,16 +17,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
-
 public class AdapterDangcau extends RecyclerView.Adapter<AdapterDangcau.ViewHolder> {
     Activity activity;
     ArrayList<String> listCauhoi;
-    String tendang; // Thêm biến này để truyền từ Dangcau.java
+    String tendang;
 
     public AdapterDangcau(Activity activity, ArrayList<String> listCauhoi, String tendang) {
         this.activity = activity;
         this.listCauhoi = listCauhoi;
-        this.tendang = tendang; // Lưu phần thi hiện tại
+        this.tendang = tendang;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -47,27 +46,17 @@ public class AdapterDangcau extends RecyclerView.Adapter<AdapterDangcau.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String tenCau = listCauhoi.get(position);
-        holder.txtCauhoi.setText(tenCau);
+        String tenCau = listCauhoi.get(position); // "cau1", "cau2"
+        String soCau = tenCau.replaceAll("[^0-9]", ""); // Chuyển thành số
+        holder.txtCauhoi.setText("Câu " + soCau); // Hiển thị "Câu 1", "Câu 2"
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(activity, Loadcauhoi.class);
             intent.putExtra("tendang", tendang);
-            intent.putExtra("tenCau", tenCau);
+            intent.putExtra("tenCau", tenCau); // Truyền key "cau1", "cau2"
             activity.startActivity(intent);
         });
-
-        holder.itemView.setOnLongClickListener(v -> {
-            new AlertDialog.Builder(activity)
-                    .setTitle("Xác nhận xoá")
-                    .setMessage("Bạn có muốn xoá câu này không?")
-                    .setPositiveButton("OK", (dialog, which) -> xoaCauHoi(position))
-                    .setNegativeButton("Hủy", null)
-                    .show();
-            return true;
-        });
     }
-
 
     @Override
     public int getItemCount() {
@@ -77,16 +66,15 @@ public class AdapterDangcau extends RecyclerView.Adapter<AdapterDangcau.ViewHold
     private void xoaCauHoi(int position) {
         if (position == RecyclerView.NO_POSITION) return;
 
-        String cauHoiXoa = listCauhoi.get(position);
+        String cauHoiXoa = listCauhoi.get(position); // key câu hỏi
         DatabaseReference databaseReference = FirebaseDatabase.getInstance()
                 .getReference("dethi").child(tendang).child(cauHoiXoa);
         databaseReference.removeValue().addOnSuccessListener(aVoid -> {
             listCauhoi.remove(position);
-            notifyItemRemoved(position);
+            notifyItemRemoved(position); // Cập nhật lại RecyclerView
             Toast.makeText(activity, "Đã xoá câu hỏi", Toast.LENGTH_SHORT).show();
         }).addOnFailureListener(e -> {
             Toast.makeText(activity, "Lỗi khi xoá trên Firebase", Toast.LENGTH_SHORT).show();
         });
     }
-
 }

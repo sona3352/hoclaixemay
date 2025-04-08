@@ -61,9 +61,9 @@ public class AdapterKhoahoc extends RecyclerView.Adapter<AdapterKhoahoc.ClassLTV
                 // Lấy ID người dùng đang đăng nhập
                 FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
                 if (firebaseUser != null) {
-                    String userId = firebaseUser.getUid(); // ID người dùng từ Firebase Authentication
+                    String userId = firebaseUser.getUid();
 
-                    // Truy vấn thông tin người dùng từ Firebase Realtime Database
+
                     DatabaseReference nguoiDungRef = FirebaseDatabase.getInstance().getReference("nguoidung").child(userId);
                     nguoiDungRef.get().addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
@@ -73,7 +73,7 @@ public class AdapterKhoahoc extends RecyclerView.Adapter<AdapterKhoahoc.ClassLTV
                             String diaChi = task.getResult().child("diachi").getValue(String.class);
                             String avatar = task.getResult().child("avatar").getValue(String.class);
 
-                            // Lấy tham số khóa học từ đối tượng (main) - điều chỉnh theo dữ liệu của bạn
+
                             String tenKhoaHoc = main.getTenkhoahoc();
                             String gioiThieu = main.getGioithieu();
                             int giaBan = main.getGiaban();
@@ -90,14 +90,11 @@ public class AdapterKhoahoc extends RecyclerView.Adapter<AdapterKhoahoc.ClassLTV
                             data.put("avatar", avatar);
                             data.put("trangthai", "Chờ duyệt");
 
-                            // Lấy reference để lưu vào node của người dùng
                             DatabaseReference userKhoaHocRef = FirebaseDatabase.getInstance().getReference("DangKyKhoaHoc").child(userId);
 
-                            // Tạo một ID duy nhất cho đăng ký khóa học
                             String idDangKy = userKhoaHocRef.push().getKey();
 
                             if (idDangKy != null) {
-                                // Lưu khóa học vào node của người dùng
                                 userKhoaHocRef.child(idDangKy).setValue(data)
                                         .addOnSuccessListener(aVoid -> {
                                             Toast.makeText(aa, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
@@ -107,7 +104,6 @@ public class AdapterKhoahoc extends RecyclerView.Adapter<AdapterKhoahoc.ClassLTV
                                         });
                             }
                         } else {
-                            // Nếu không lấy được dữ liệu người dùng
                             Toast.makeText(aa, "Không thể lấy thông tin người dùng!", Toast.LENGTH_SHORT).show();
                         }
                     });

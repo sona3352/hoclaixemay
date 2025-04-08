@@ -13,6 +13,16 @@ public class QuizViewModel extends ViewModel {
     private int socauhoi = 0;
     private final Map<Integer, String> dapAnDaChon = new HashMap<>();
     private final Map<String, List<Cauhoi2>> questionsByFragment2 = new HashMap<>();
+    private final List<Cauhoi> diemlietCauHoiSai = new ArrayList<>();
+    public void themCauDiemLietSai(Cauhoi cauHoi) {
+        if (!diemlietCauHoiSai.contains(cauHoi)) {
+            diemlietCauHoiSai.add(cauHoi);
+        }
+    }
+
+    public List<Cauhoi> getDiemlietCauHoiSai() {
+        return diemlietCauHoiSai;
+    }
 
     // Lưu câu hỏi theo từng Fragment
     private final Map<String, List<Cauhoi>> questionsByFragment = new HashMap<>();

@@ -31,10 +31,11 @@ import java.util.Collections;
 public class Dangcau extends AppCompatActivity {
     RecyclerView rv22;
     AdapterDangcau adapter;
-    ArrayList<String> listCauhoi;
+    ArrayList<String> listCauhoi; // Lưu key câu hỏi
     String tendang;
 
     FloatingActionButton btnThemcau;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +44,7 @@ public class Dangcau extends AppCompatActivity {
         setContentView(R.layout.activity_dangcau);
 
         tendang = getIntent().getStringExtra("tende");
-        rv22= findViewById(R.id.rv22);
+        rv22 = findViewById(R.id.rv22);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
         rv22.setLayoutManager(gridLayoutManager);
         rv22.setNestedScrollingEnabled(false);
@@ -52,10 +53,11 @@ public class Dangcau extends AppCompatActivity {
         rv22.setAdapter(adapter);
         btnThemcau = findViewById(R.id.fabThemcau);
 
-        loadCauHoi();
-        btnThemcau.setOnClickListener(view -> showInputDialog());
+        loadCauHoi(); // Load danh sách câu hỏi từ Firebase
 
+        btnThemcau.setOnClickListener(view -> showInputDialog()); // Nút thêm câu hỏi
     }
+
     private void loadCauHoi() {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance()
                 .getReference("dethi").child(tendang);
@@ -66,18 +68,19 @@ public class Dangcau extends AppCompatActivity {
                 listCauhoi.clear(); // Chỉ lưu key câu hỏi
                 for (DataSnapshot data : snapshot.getChildren()) {
                     String key = data.getKey(); // Lấy key (cauX)
-                    if (key.startsWith("cau")) { // Lọc chỉ lấy câu hỏi
-                        listCauhoi.add(key); // Lưu key để sử dụng
+                    if (key.startsWith("cau")) { // Chỉ lấy các câu hỏi
+                        listCauhoi.add(key); // Lưu đúng key (cau1, cau2, ...)
                     }
                 }
 
+                // Sắp xếp lại danh sách câu hỏi theo thứ tự
                 Collections.sort(listCauhoi, (o1, o2) -> {
                     int num1 = Integer.parseInt(o1.replace("cau", ""));
                     int num2 = Integer.parseInt(o2.replace("cau", ""));
                     return Integer.compare(num1, num2);
                 });
 
-                adapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged(); // Cập nhật lại giao diện
             }
 
             @Override
@@ -86,8 +89,6 @@ public class Dangcau extends AppCompatActivity {
             }
         });
     }
-
-
 
     private void kiemTraVaThemCauHoi(int soCau) {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance()
@@ -99,7 +100,7 @@ public class Dangcau extends AppCompatActivity {
                 if (snapshot.exists()) {
                     Toast.makeText(Dangcau.this, "Câu " + soCau + " đã tồn tại!", Toast.LENGTH_SHORT).show();
                 } else {
-                    themCauHoi(soCau);
+                    themCauHoi(soCau); // Nếu không tồn tại, thêm câu hỏi mới
                 }
             }
 
@@ -109,13 +110,13 @@ public class Dangcau extends AppCompatActivity {
             }
         });
     }
+
     private void themCauHoi(int soCau) {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance()
                 .getReference("dethi").child(tendang);
-            databaseReference.child("cau" + soCau).setValue("Câu " + soCau);  // Thêm câu đơn giản
-            Toast.makeText(Dangcau.this, "Thêm câu " + soCau + " thành công!", Toast.LENGTH_SHORT).show();
+        databaseReference.child("cau" + soCau).setValue("Câu " + soCau);  // Thêm câu mới
+        Toast.makeText(Dangcau.this, "Thêm câu " + soCau + " thành công!", Toast.LENGTH_SHORT).show();
     }
-
 
     private void showInputDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -131,7 +132,7 @@ public class Dangcau extends AppCompatActivity {
             String inputText = input.getText().toString();
             if (!inputText.isEmpty()) {
                 int soCau = Integer.parseInt(inputText);
-                kiemTraVaThemCauHoi(soCau);
+                kiemTraVaThemCauHoi(soCau); // Kiểm tra và thêm câu hỏi
             }
         });
 
@@ -139,6 +140,4 @@ public class Dangcau extends AppCompatActivity {
 
         builder.show();
     }
-
-
 }

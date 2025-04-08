@@ -12,6 +12,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,6 +50,7 @@ public class Xahoi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_xahoi);
 
@@ -90,6 +92,7 @@ public class Xahoi extends AppCompatActivity {
                 .crop()
                 .compress(512)
                 .start(100);
+
     }
 
     @Override

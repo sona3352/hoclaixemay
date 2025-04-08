@@ -184,4 +184,9 @@ public class MainActivity extends AppCompatActivity {
         LT = new AdapterLT(this, list2);
         rv2.setAdapter(LT);
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        layout99.setVisibility(View.GONE);
+    }
 }

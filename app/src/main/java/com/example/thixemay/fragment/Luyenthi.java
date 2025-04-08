@@ -48,9 +48,6 @@ public class Luyenthi extends Fragment {
         View view = inflater.inflate(R.layout.fragment_luyenthi, container, false);
         if (getArguments() != null) {
             position = getArguments().getInt("POSITION", 0);
-        }
-        if (getArguments() != null) {
-            position = getArguments().getInt("POSITION", 0);
             dethi_key = getArguments().getString("DETHI_KEY", "de1");
         }
         taocaugiaithichTuFirebase();
@@ -93,7 +90,8 @@ public class Luyenthi extends Fragment {
                     String luachonC = cauSnapshot.child("luachonC").getValue(String.class);
                     String luachonD = cauSnapshot.child("luachonD").getValue(String.class);
                     String dapAnDung = cauSnapshot.child("dapAnDung").getValue(String.class);
-                    questionList.add(new Cauhoi(hinhanhUrl, cauhoi, luachonA, luachonB, luachonC, luachonD, dapAnDung,""));
+                    boolean diemliet = cauSnapshot.child("diemliet").getValue(Boolean.class);
+                    questionList.add(new Cauhoi(hinhanhUrl, cauhoi, luachonA, luachonB, luachonC, luachonD, dapAnDung,"",diemliet));
                 }
 
                 quizViewModel.addQuestionsForFragment("fragment1", questionList);
@@ -145,7 +143,12 @@ public class Luyenthi extends Fragment {
                 cauhoi90.setText(cauhoii);
                 btn1.setText("A: "+ cauaa);
                 btn2.setText("B: "+ caubb);
-                btn3.setText("C: "+ caucc);
+                if (caucc != null && !caucc.isEmpty()) {
+                    btn3.setText("C: " + caucc);
+                    btn3.setVisibility(View.VISIBLE);
+                } else {
+                    btn3.setVisibility(View.GONE);
+                }
                 if (caudd != null && !caudd.isEmpty()) {
                     btn4.setText("D: " + caudd);
                     btn4.setVisibility(View.VISIBLE);
@@ -184,8 +187,12 @@ public class Luyenthi extends Fragment {
         if (!dapAnNguoiDung.equals("") && dapAnNguoiDung.equals(dapAnDung) && (dapAnTruoc == null || !dapAnTruoc.equals(dapAnDung))) {
             quizViewModel.incrementSocaudung();
         }
+        if (cauHoiHienTai.isDiemliet() && !dapAnNguoiDung.equals(dapAnDung)) {
+            quizViewModel.themCauDiemLietSai(cauHoiHienTai);
+        }
 
         // Lưu đáp án đã chọn
         quizViewModel.setDapAnDaChon(index, dapAnNguoiDung);
     }
+
 }

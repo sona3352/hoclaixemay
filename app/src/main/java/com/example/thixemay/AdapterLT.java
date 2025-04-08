@@ -50,7 +50,6 @@ public class AdapterLT extends RecyclerView.Adapter<AdapterLT.ClassLTViewHoder>{
                 if (selectedPosition != RecyclerView.NO_POSITION) {
                     Intent intent;
 
-                    // Xác định Activity cần mở dựa vào vị trí
                     switch (selectedPosition) {
                         case 0:
                             intent = new Intent(aa, Thithu.class);

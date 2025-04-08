@@ -75,6 +75,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Tất nhiên là phần đường xe chạy rồi!."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -85,6 +86,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 " Phải có chiều dọc và bề rộng nha mọi người "
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -95,6 +97,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Khổ giới hạn đường sẽ có chiều cao, chiều rộng của đường nha "
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -105,6 +108,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 " Dải phân cách nó nằm ở giữa đường đó, chia 2 chiều riêng biệt "
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -115,6 +119,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Dải phân cách gồm cố định là mấy cái cột bê tông hoặc mấy thanh sắt ấy và di động là mấy cái như hộp nhựa đó"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -125,6 +130,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Người lái xe là người điều khiển xe cơ giới.Câu này thì chắc không ai sai đâu"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -135,6 +141,7 @@ public class Khainiem extends Fragment {
                 "Đường ưu tiên.",
                 "D",
                 "Đọc ở trên mà thấy chữ đường ưu tiên thì mình chọn đáp án đường ưu tiên luôn"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -145,6 +152,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 " Phương tiện giao thông cơ giới không có xe máy chuyên dùng nha mấy ba"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -155,6 +163,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Đáp án 2 và 3 có xe bằng động cơ mà, thô sơ gì không biết"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -165,6 +174,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 "Cả 2 luôn nha, đường bộ thì xe nào cũng chơi hết "
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -175,6 +185,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 "Cả 2 luôn nha, đường bộ thì xe nào cũng chơi hết, dắt bò đi ăn cỏ còn được"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -185,6 +196,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 "Người điều khiển phương tiện bao gồm cả xe cơ giới và xe máy chuyên dùng nha! "
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -195,6 +207,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Người điều khiển giao thông là cảnh sát giao thông đó!"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -205,6 +218,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Dừng xe là đứng yên tạm thời nha!"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -215,6 +229,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Đỗ xe là đứng yên vô thời hạn, như nghỉ phép vậy!"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -225,6 +240,7 @@ public class Khainiem extends Fragment {
                 "Tất cả các ý trên.",
                 "D",
                 "Đường cao tốc bao gồm tất cả các ý trên nha!"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -235,6 +251,7 @@ public class Khainiem extends Fragment {
                 "Sử dụng còi và quay đầu xe trong khu dân cư.",
                 "C",
                 "Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách là không ổn đâu nha! "
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -245,6 +262,7 @@ public class Khainiem extends Fragment {
                 "Bị nghiêm cấm tùy theo loại xe.",
                 "B",
                 "Hành vi đưa xe không đảm bảo an toàn kỹ thuật bị nghiêm cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -255,6 +273,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 "Cuộc đua xe cần cấp phép."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -265,6 +284,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Có ma túy bị nghiêm cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -275,6 +295,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Uống rượu bia không được lái xe."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -285,6 +306,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Trong máu hoặc hơi thở có nồng độ cồn bị nghiêm cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -295,6 +317,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Sử dụng rượu, bia khi lái xe bị phạt hành chính hoặc xử lý hình sự."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -305,6 +328,7 @@ public class Khainiem extends Fragment {
                 "Cả ý 1 và ý 2.",
                 "A",
                 "Người điều khiển bị cấm sử dụng rượu, bia khi tham gia giao thông."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -315,6 +339,7 @@ public class Khainiem extends Fragment {
                 "Chỉ được phép thực hiện với thành viên trong gia đình.",
                 "B",
                 "Không được phép giao xe cho người không đủ điều kiện tham gia giao thông."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -325,6 +350,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu bị nghiêm cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -335,6 +361,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 "Không vượt quá tốc độ cho phép."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -345,6 +372,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Di chuyển tốc độ thấp hơn đi về phía bên phải."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -355,6 +383,7 @@ public class Khainiem extends Fragment {
                 "Đi ở bất cứ làn nào nhưng phải bấm đèn cảnh báo nguy hiểm để báo hiệu cho các phương tiện khác.",
                 "A",
                 "Tốc độ chậm đi ở làn bên phải trong cùng."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -365,6 +394,7 @@ public class Khainiem extends Fragment {
                 "Không bị nghiêm cấm khi khẩn cấp.",
                 "C",
                 "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc bị nghiêm cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -375,6 +405,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Chỉ sử dụng còi từ 5 giờ sáng đến 22 giờ tối."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -385,6 +416,7 @@ public class Khainiem extends Fragment {
                 "Đèn chiếu gần (đèn cốt).",
                 "D",
                 "Trong đô thị sử dụng đèn chiếu gần."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -395,6 +427,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Không được phép lắp đặt còi đèn không đúng thiết kế."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -405,6 +438,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Lắp đặt còi đèn không đúng thiết kế phải được chấp thuận của cơ quan có thẩm quyền."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -415,6 +449,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 " Nghiêm cấm sản xuất, mua bán, sử dụng trái phép."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -425,6 +460,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Không được vượt trên cầu hẹp có một làn xe."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -435,6 +471,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 "Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -445,6 +482,7 @@ public class Khainiem extends Fragment {
                 "Được vượt khi đảm bảo an toàn.",
                 "D",
                 "Được vượt khi xe không phát tín hiệu ưu tiên."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -455,6 +493,7 @@ public class Khainiem extends Fragment {
                 "Được vượt khi đảm bảo an toàn.",
                 "A",
                 "Không được vượt khi đang phát tín hiệu ưu tiên."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -465,6 +504,7 @@ public class Khainiem extends Fragment {
                 "",
                 "A",
                 "Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -475,6 +515,7 @@ public class Khainiem extends Fragment {
                 "Nhờ một người ra hiệu giao thông trên đường chậm lại trước khi quay đầu.",
                 "A",
                 "Chỉ quay đầu xe ở điểm giao cắt hoặc nơi có biển báo cho phép quay đầu."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -485,6 +526,7 @@ public class Khainiem extends Fragment {
                 "Cả ý 2 và ý 3.",
                 "D",
                 "Cấm lùi xe ở khu vực cấm dừng và nơi đường bộ giao nhau."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -495,6 +537,7 @@ public class Khainiem extends Fragment {
                 "",
                 "B",
                 " Không được dừng, đỗ xe trên miệng cống thoát nước."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -505,6 +548,7 @@ public class Khainiem extends Fragment {
                 "Không được phép.",
                 "D",
                 "Không được phép."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -515,6 +559,7 @@ public class Khainiem extends Fragment {
                 "Không được phép.",
                 "D",
                 "Xe mô tô không được kéo xe khác."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -525,6 +570,7 @@ public class Khainiem extends Fragment {
                 "",
                 "C",
                 "Không được phép."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -535,6 +581,7 @@ public class Khainiem extends Fragment {
                 "Chở người ngồi sau dưới 16 tuổi.",
                 "A",
                 "Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe để quệt xuống đường khi xe đang chạy."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -545,6 +592,7 @@ public class Khainiem extends Fragment {
                 "Được mang, vác tùy theo sức khoẻ của bản thân.",
                 "B",
                 "Xe mô tô không được mang vác vật cồng kềnh."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -555,6 +603,7 @@ public class Khainiem extends Fragment {
                 "Không được phép.",
                 "D",
                 "Xe mô tô không được kéo xe khác."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -565,6 +614,7 @@ public class Khainiem extends Fragment {
                 "Được sử dụng nếu không có áo mưa.",
                 "C",
                 " Khi tham gia giao thông, người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy không được sử dụng ô vì dễ gây mất cân bằng và nguy hiểm cho người điều khiển và các phương tiện khác."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -575,6 +625,7 @@ public class Khainiem extends Fragment {
                 "Chỉ được phép khi người đi xe đạp đã quá mệt.",
                 "B",
                 "Xe mô tô không được kéo xe khác."
+                ,false
         ));
         quizViewModel.addcauhoi("fragment2", questionList);
         giaithich = questionList;

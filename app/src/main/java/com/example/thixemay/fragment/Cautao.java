@@ -74,7 +74,7 @@ public class Cautao extends Fragment {
                 "Tùy từng loại phương tiện cơ giới đường bộ.",
                 "",
                 "B",
-                "Không được phép thay đổi so với giấy chứng nhận đăng ký xe."
+                "Không được phép thay đổi so với giấy chứng nhận đăng ký xe.",false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -85,6 +85,7 @@ public class Cautao extends Fragment {
                 "",
                 "C",
                 "Xe ô tô tham gia giao thông đường bộ phải bảo đảm các quy định về chất lượng, an toàn kỹ thuật và bảo vệ môi trường, bao gồm các yêu cầu về kính chắn gió, hệ thống hãm và chuyển hướng, đèn chiếu sáng và các bộ phận giảm thanh, giảm khói."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -95,6 +96,7 @@ public class Cautao extends Fragment {
                 "",
                 "B",
                 "Xe mô tô và xe ô tô tham gia giao thông trên đường bộ phải bắt buộc có đủ bộ phận giảm thanh."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -105,6 +107,7 @@ public class Cautao extends Fragment {
                 "Cả ý 1 và ý 2.",
                 "D",
                 "Xe ô tô tham gia giao thông trên đường bộ phải có đủ đèn chiếu sáng gần và xa, đèn soi biển số, đèn báo hãm và đèn tín hiệu."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -115,6 +118,7 @@ public class Cautao extends Fragment {
                 "",
                 "A",
                 "Yêu cầu của kính chắn gió là chọn loại kính an toàn, kính nhiều lớp, đúng quy cách, không rạn nứt, đảm bảo hình ảnh quan sát rõ ràng, không bị méo mó."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -125,6 +129,7 @@ public class Cautao extends Fragment {
                 "",
                 "C",
                 " Bánh xe lắp cho xe ô tô phải đảm bảo cả về lốp và vành, bao gồm đủ số lượng, đúng áp suất, không bị mòn quá mức, và lắp đặt chắc chắn, không có rạn nứt hoặc cong vênh."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -135,6 +140,7 @@ public class Cautao extends Fragment {
                 "",
                 "A",
                 " Âm lượng của còi là từ 90 dB đến 115 dB."
+                ,false
         ));
         quizViewModel.addcauhoi("fragment2", questionList);
         giaithich = questionList;

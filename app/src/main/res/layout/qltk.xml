@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@drawable/vienmenu1"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvHoten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên người dùng"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF6200EE"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

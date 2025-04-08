@@ -70,6 +70,7 @@ public class Diemliet extends Fragment {
                 "",
                 "C",
                 "Hành vi đua xe chưa được cơ quan có thẩm quyền cấp phép là sai quy định của pháp luật."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -80,6 +81,7 @@ public class Diemliet extends Fragment {
                 "",
                 "A",
                 "Ma túy là chất kích thích bị nghiêm cấm đối với người điều khiển phương tiện giao thông đường bộ."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -90,6 +92,7 @@ public class Diemliet extends Fragment {
                 "",
                 "B",
                 "Người điều khiển phương tiện giao thông đường bộ không được dùng rượu, bia khi lái xe."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -100,6 +103,7 @@ public class Diemliet extends Fragment {
                 "Cả ý 1 và ý 2",
                 "A",
                 "Những người trực tiếp điều khiển ôtô, môtô, xe đạp và xe gắn máy bị cấm sử dụng rượu, bia."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -110,6 +114,7 @@ public class Diemliet extends Fragment {
                 "",
                 "C",
                 "Nếu vi phạm những lỗi trên, người điều khiển phương tiện phải chịu trách nhiệm theo quy định của pháp luật."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -120,6 +125,7 @@ public class Diemliet extends Fragment {
                 "",
                 "B",
                 "Hành vi quay đầu tại những nơi không được phép tăng nguy cơ xảy ra tai nạn giao thông."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -130,6 +136,7 @@ public class Diemliet extends Fragment {
                 "Không được phép.",
                 "D",
                 "Xe môtô hai bánh, ba bánh, xe gắn máy không được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác ở bất kỳ trường hợp nào."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -140,6 +147,7 @@ public class Diemliet extends Fragment {
                 "",
                 "C",
                 "Người điều khiển phương tiện vi phạm những hành vi trên có thể bị xử lý theo quy định của pháp luật."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -150,6 +158,7 @@ public class Diemliet extends Fragment {
                 "Chở người ngồi sau dưới 16 tuổi",
                 "A",
                 "Những hành vi trên không được phép thực hiện vì gây nguy hiểm cho người điều khiển phương tiện và những người xung quanh."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -160,6 +169,7 @@ public class Diemliet extends Fragment {
                 "",
                 "B",
                 "Mang, vác vật cồng kềnh khi ngồi trên xe môtô hai bánh, ba bánh, xe gắn máy tiềm ẩn nhiều nguy cơ xảy ra tai nạn giao thông."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -170,6 +180,7 @@ public class Diemliet extends Fragment {
                 "Không được phép.",
                 "C",
                 "Hành vi bám, kéo hoặc đẩy các phương tiện khác khi ngồi trên xe môtô hai bánh, ba bánh, xe gắn máy là vi phạm pháp luật."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -180,6 +191,7 @@ public class Diemliet extends Fragment {
                 "Được sử dụng nếu không có áo mưa.",
                 "C",
                 "Sử dụng ô (dù) khi ngồi trên xe môtô hai bánh, ba bánh, xe gắn máy dễ khiến phương tiện mất lái."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -190,6 +202,7 @@ public class Diemliet extends Fragment {
                 "Chỉ được phép khi người đi xe đạp đã quá mệt.",
                 "B",
                 "Nghiêm cấm xe môtô kéo theo người đang điều khiển xe đạp leo dốc."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -200,6 +213,7 @@ public class Diemliet extends Fragment {
                 "",
                 "C",
                 "Hành vi dùng xe môtô để kéo, đẩy xe môtô khác bị cấm."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -210,6 +224,7 @@ public class Diemliet extends Fragment {
                 "",
                 "A",
                 "Quy định tại Việt Nam và nhiều quốc gia không cho phép vận chuyển đồ vật cồng kềnh bằng xe môtô, xe gắn máy."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -220,6 +235,7 @@ public class Diemliet extends Fragment {
                 "",
                 "A",
                 "Phạt tiền 200.000-300.000 đồng đối với người điều khiển, người ngồi trên xe không đội mũ bảo hiểm hoặc đội mũ bảo hiểm không cài quai đúng quy cách khi tham gia giao thông trên đường bộ."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -230,6 +246,7 @@ public class Diemliet extends Fragment {
                 "",
                 "B",
                 "Hành vi dùng điện thoại di động và các thiết bị âm thanh khi điều khiển xe môtô bị phạt từ 600.000 đồng đến 1 triệu đồng."
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -240,6 +257,7 @@ public class Diemliet extends Fragment {
                 "",
                 "B",
                 "Phải giảm tốc độ, phải dừng lại trước vạch dừng chờ người đi bộ đi qua rồi mới tiếp tục di chuyển"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -250,6 +268,7 @@ public class Diemliet extends Fragment {
                 "",
                 "A",
                 "Người lái xe phải giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ là đáp án phù hợp nhất"
+                ,false
         ));
         questionList.add(new Cauhoi(
                 "",
@@ -260,6 +279,7 @@ public class Diemliet extends Fragment {
                 "",
                 "B",
                 "Tuyệt đối không được sử dụng điện thoại khi điều khiển phương tiện tham gia giao thông đường bộ"
+                ,false
         ));
         quizViewModel.addcauhoi("fragment2", questionList);
         giaithich = questionList;

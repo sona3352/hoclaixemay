@@ -114,6 +114,7 @@ public class thongtincanhan extends AppCompatActivity {
 
             // Tạo đối tượng người dùng
             ClassND user = new ClassND(
+                    "",
                     uploadedImageUrl,
                     auth.getCurrentUser().getEmail(),
                     hoTen,diaChi,""

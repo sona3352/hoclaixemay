@@ -13,10 +13,11 @@ public class Cauhoi implements Serializable {
     private boolean isAnswered = false;
     private String selectedAnswer;
     private String giaithich;
+    private boolean diemliet;
     public Cauhoi() {
     }
 
-    public Cauhoi(String hinhanh, String cauhoi, String luaChonA, String luaChonB, String luaChonC, String luaChonD, String dapAnDung,String giaithich) {
+    public Cauhoi(String hinhanh, String cauhoi, String luaChonA, String luaChonB, String luaChonC, String luaChonD, String dapAnDung,String giaithich, boolean diemliet) {
         this.hinhanh = hinhanh;
         this.cauhoi = cauhoi;
         this.luaChonA = luaChonA;
@@ -25,6 +26,14 @@ public class Cauhoi implements Serializable {
         this.luaChonD = luaChonD;
         this.dapAnDung = dapAnDung;
         this.giaithich = giaithich;
+        this.diemliet = diemliet;
+    }
+    public boolean isDiemliet() {
+        return diemliet;
+    }
+
+    public void setDiemliet(boolean diemliet) {
+        this.diemliet = diemliet;
     }
 
     public String getHinhanh() {
