@@ -46,7 +46,8 @@ public class Video extends AppCompatActivity {
         list9.add(new Classphim(R.drawable.me1,"Lái xe thực tế 1","android.resource://" + getPackageName() + "/" + R.raw.meo1));
         list9.add(new Classphim(R.drawable.me2,"Lái xe thực tế 2","android.resource://" + getPackageName() + "/" + R.raw.meo2));
         list9.add(new Classphim(R.drawable.me3,"Lái xe thực tế 3","android.resource://" + getPackageName() + "/" + R.raw.meo3));
-        list9.add(new Classphim(R.drawable.me4,"Lái xe thực tế 4","android.resource://" + getPackageName() + "/" + R.raw.meo3));
+        list9.add(new Classphim(R.drawable.me4,"Lái xe thực tế 4","android.resource://" + getPackageName() + "/" + R.raw.meo4));
+        list9.add(new Classphim(R.drawable.me5,"Lái xe thực tế 5","android.resource://" + getPackageName() + "/" + R.raw.meo5));
         xp = new AdapterXP(this, list9);
         rv4.setAdapter(xp);
 
